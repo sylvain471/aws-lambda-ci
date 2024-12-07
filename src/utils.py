@@ -1,2 +1,2 @@
 def get_extra_utils():
-    return "returning a string"
+    return 'Hello from Lambda! what a rainy day :) !'
