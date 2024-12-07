@@ -8,3 +8,7 @@ def test_lambda_function():
         "statusCode":200,
         "body": json.dumps(get_extra_utils())
     } == lambda_handler({},{})
+    
+
+def test_lambda_function_2():
+    assert lambda_handler({},{})["statusCode"]==200
