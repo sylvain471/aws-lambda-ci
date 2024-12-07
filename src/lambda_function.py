@@ -1,5 +1,5 @@
 import json
-from utils import get_extra_utils
+from src.utils import get_extra_utils
 
 def lambda_handler(event, context):
     # TODO implement
