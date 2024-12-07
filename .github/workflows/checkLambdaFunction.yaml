@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: Checkout repository
       uses: actions/setup-python@v2
       with:
@@ -15,7 +16,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt 
+        pwd
+        ls -a
+        pip install -r .github/workflows/requirements.txt 
     
     - name: Run tests
       run: |
