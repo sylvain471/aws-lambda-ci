@@ -7,8 +7,12 @@ def test_lambda_function():
     assert {
         "statusCode":200,
         "body": json.dumps(get_extra_utils())
+<<<<<<< HEAD
     } == lambda_handler({},{})
     
 
 def test_lambda_function_2():
     assert lambda_handler({},{})["statusCode"]==200
+=======
+    } == lambda_handler({},{})
+>>>>>>> b9a09b4fbd2d8edb5ac90e91b1f08428747d6ad6
