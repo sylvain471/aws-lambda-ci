@@ -7,7 +7,7 @@ def lambda_handler(event, context):
     print(get_extra_utils())
     return {
         'statusCode': 200,
-        'body': json.dumps('Hello from Lambda!')
+        'body': json.dumps('Hello from Lambda! what a rainy day :) !')
     }
 
 if __name__=="__main__":
